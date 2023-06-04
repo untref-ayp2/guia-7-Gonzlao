@@ -4,5 +4,13 @@ package ejercicios
 // n y b y devuelva true si n es potencia de b.
 // Por ejemplo: esPotencia(8, 2) devuelve true.
 func EsPotencia(n, b int) bool {
-	panic("Not implemented")
+	if n == 1 {
+		return true
+	}
+	if n%b != 0 {
+		return false
+	}
+
+	return EsPotencia(n/b, b)
+
 }

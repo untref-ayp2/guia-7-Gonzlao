@@ -113,3 +113,7 @@ func TestEjercicio15(t *testing.T) {
 	assert.Equal(t, 8, Pico([]int{1, 2, 3, 4, 5, 6, 7, 8, 9}))
 	assert.Equal(t, 0, Pico([]int{9, 8, 7, 6, 5, 4, 3, 2, 1}))
 }
+
+func TestEjercicio16(t *testing.T) {
+	assert.Equal(t, 42, Sumatoria([]int{7, 4, 6, 8, 5, 9, 3}))
+}
